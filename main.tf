@@ -3,13 +3,12 @@ terraform {
     organization = "Datagrokr_sandeep"
 
     workspaces {
-      name = "evolution"
+      name = "terraform-vcs-datagrokr"
     }
   }
 
 
 }
-
 
 provider "aws" {
   region = "us-east-1"
