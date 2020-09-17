@@ -1,3 +1,13 @@
+ terraform {
+  backend "remote" {
+    organization = "Datagrokr_sandeep"
+
+    workspaces {
+      name = "evolution"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
