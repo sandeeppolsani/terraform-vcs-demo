@@ -1,4 +1,4 @@
- terraform {
+terraform {
   backend "remote" {
     organization = "Datagrokr_sandeep"
 
