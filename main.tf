@@ -19,6 +19,7 @@ data "aws_vpc" "vpc_data" {
 
 resource "aws_instance" "one-ec2-one" {
   ami           = "ami-0c94855ba95c71c99"
+  key_name      = "main"
   instance_type = "t2.micro"
   tags = {
     Name      = "instance-1"
