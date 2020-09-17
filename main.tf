@@ -4,7 +4,6 @@ provider "aws" {
   region     = "us-east-1"
 }
 data "aws_vpc" "vpc_data" {
-  count   = [{ map = "value", danger = "naresh" }]
   default = true
 }
 
